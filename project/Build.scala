@@ -7,7 +7,7 @@ object JTScalaBuild extends Build {
   override lazy val settings = super.settings ++
     Seq(
       version := "0.1.0-SNAPSHOT",
-      scalaVersion := "2.10.3",
+      scalaVersion := "2.11.8",
       organization := "com.azavea.geotrellis",
 
       // disable annoying warnings about 2.10.x
@@ -65,8 +65,8 @@ object JTScalaBuild extends Build {
     Seq(
       name := "jtscala",
       libraryDependencies ++= Seq(
-        "org.scalatest" % "scalatest_2.10" % "2.0.M5b" % "test",
-        "org.scalacheck" %% "scalacheck" % "1.11.1" % "test",
+        "org.scalatest" %% "scalatest" % "3.0.0" % "test",
+        "org.scalacheck" %% "scalacheck" % "1.13.4" % "test",
         "com.vividsolutions" % "jts" % "1.13"
       )
     )
